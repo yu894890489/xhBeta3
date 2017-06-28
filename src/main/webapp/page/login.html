@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-5 col-lg-offset-4">
+				<input type="text" name="userName">
+			</div>
+			<div class="col-lg-5 col-lg-offset-4">
+				
+			</div>
+			<div class="col-lg-5 col-lg-offset-4">
+				
+			</div>
+		</div>
+	</div>
+	<div id="a"></div>
+	<link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="../static/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../static/js/template-debug.js"></script>
+	<script type="text/javascript" src="../static/bootstrap/js/bootstrap.js"></script>
+	
+	<script type="text/javascript">
+	//ajaxTest();
+	 function ajaxTest(){  
+	        $.ajax({  
+	        data:"name="+$("#name").val(),  
+	        type:"GET",  
+	        dataType: 'json',  
+	        url:"/comm/login.do",  
+	        error:function(data){ 
+	            alert("出错了！！:"+data.msg);  
+	        },  
+	        success:function(data){ 
+	        	var str = "{{msg}}"
+	        	var re = template.compile(str);
+	        	var html = re(data);
+	        	document.getElementById('a').innerHTML = html;
+	        	console.log(data);
+	            alert("success:"+data.msg);  
+	            $("#result").html(data.msg) ;  
+	        }  
+	        });  
+	    }  
+	</script>
+	</body>
+</html>

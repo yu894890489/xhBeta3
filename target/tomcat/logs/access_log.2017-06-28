@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [28/Jun/2017:15:43:01 +0800] "GET / HTTP/1.1" 200 903 http-bio-8080-exec-1 109
+0:0:0:0:0:0:0:1 - - [28/Jun/2017:15:43:01 +0800] "GET /static/js/jquery-1.9.1.min.js HTTP/1.1" 304 - http-bio-8080-exec-4 3
+0:0:0:0:0:0:0:1 - - [28/Jun/2017:15:43:01 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-5 3
+0:0:0:0:0:0:0:1 - - [28/Jun/2017:15:44:05 +0800] "GET /page/login.html HTTP/1.1" 200 232 http-bio-8080-exec-7 4
+0:0:0:0:0:0:0:1 - - [28/Jun/2017:15:44:43 +0800] "GET / HTTP/1.1" 200 925 http-bio-8080-exec-10 929
+0:0:0:0:0:0:0:1 - - [28/Jun/2017:15:44:45 +0800] "GET / HTTP/1.1" 200 925 http-bio-8080-exec-10 7
+0:0:0:0:0:0:0:1 - - [28/Jun/2017:16:03:35 +0800] "GET /page/login.html HTTP/1.1" 200 834 http-bio-8080-exec-3 6
+0:0:0:0:0:0:0:1 - - [28/Jun/2017:16:03:35 +0800] "GET /static/js/template-debug.js HTTP/1.1" 200 17231 http-bio-8080-exec-2 4
+0:0:0:0:0:0:0:1 - - [28/Jun/2017:16:03:50 +0800] "GET /page/login.html HTTP/1.1" 200 848 http-bio-8080-exec-2 17
+0:0:0:0:0:0:0:1 - - [28/Jun/2017:16:03:50 +0800] "GET /page/comm/login.do?name=undefined HTTP/1.1" 404 949 http-bio-8080-exec-2 38
+0:0:0:0:0:0:0:1 - - [28/Jun/2017:16:04:24 +0800] "GET /page/login.html HTTP/1.1" 200 849 http-bio-8080-exec-2 8
+0:0:0:0:0:0:0:1 - - [28/Jun/2017:16:04:29 +0800] "GET /comm/login.do?name=undefined HTTP/1.1" 200 27 http-bio-8080-exec-2 4580
+0:0:0:0:0:0:0:1 - - [28/Jun/2017:16:07:20 +0800] "GET /page/login.html HTTP/1.1" 200 1019 http-bio-8080-exec-5 10
+0:0:0:0:0:0:0:1 - - [28/Jun/2017:16:07:20 +0800] "GET /comm/login.do?name=undefined HTTP/1.1" 200 27 http-bio-8080-exec-5 3
