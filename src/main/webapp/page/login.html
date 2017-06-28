@@ -14,7 +14,7 @@
 				
 			</div>
 			<div class="col-lg-5 col-lg-offset-4">
-				
+				ss
 			</div>
 		</div>
 	</div>
@@ -25,21 +25,18 @@
 	<script type="text/javascript" src="../static/bootstrap/js/bootstrap.js"></script>
 	
 	<script type="text/javascript">
-	//ajaxTest();
+	ajaxTest();
 	 function ajaxTest(){  
 	        $.ajax({  
-	        data:"name="+$("#name").val(),  
-	        type:"GET",  
-	        dataType: 'json',  
-	        url:"/comm/login.do",  
+	        type:"post",  
+	        dataType: 'json',
+	        contentType: "application/json",
+	        data:JSON.stringify({username:'1',password:'2'}),  
+	        url:"/comm/testValid.do",  
 	        error:function(data){ 
 	            alert("出错了！！:"+data.msg);  
 	        },  
 	        success:function(data){ 
-	        	var str = "{{msg}}"
-	        	var re = template.compile(str);
-	        	var html = re(data);
-	        	document.getElementById('a').innerHTML = html;
 	        	console.log(data);
 	            alert("success:"+data.msg);  
 	            $("#result").html(data.msg) ;  

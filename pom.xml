@@ -331,8 +331,8 @@
 						<port>8080</port>
 						<uriEncoding>UTF-8</uriEncoding>
 						<server>tomcat7</server>
-						<contextReloadable>false</contextReloadable>
-						<useTestClasspath>true</useTestClasspath>
+            <username>admin</username>  
+            <password>password</password> 
 					</configuration>
 				</plugin>
 
