@@ -13,17 +13,44 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.xh.comm.entry.UserBean;
 
+/**
+ * 
+ * @author yuq
+ * @date 2017年6月28日
+ * @todo 目前只是测试 ajax 下一步做session的管理
+ */
 @Controller
 @RequestMapping("/comm")
 public class CommAction {
 
 	private static final Logger log = LoggerFactory
 			.getLogger(CommAction.class);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	 @RequestMapping(value="/login.do")  
 	    public @ResponseBody Map<String,Object> login(HttpServletRequest request, HttpServletResponse response) throws IOException{  
